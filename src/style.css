@@ -118,6 +118,7 @@
  .hero .row .col img{
     margin-left: 20px;
  }
+
  .content{ 
     position: relative;
     background-color: white;
@@ -177,6 +178,15 @@
     .Qualification .container .row{
         display: flex;
         flex-direction: column;
+    }
+    #col-1{
+        padding-left: 20px;
+    }
+    .hero .buttons{
+        padding-left: 60px;
+    }
+    .hero #icons{
+        padding-left: 60px;
     }
 }
 
