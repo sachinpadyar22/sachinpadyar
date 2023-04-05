@@ -1,37 +1,31 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
-
-.navbar .menu ul li a{
-   margin-left: 30px;
-   font-weight: 600;
-   color: black;
-   border-bottom: 2px solid white;
-   transition: .3s;
-   
+header{
+    background-color: rgb(186, 186, 186);
 }
-.navbar .menu ul li a:hover{
-    border-bottom: 2px solid black;
-    transition: .3s;
- }
- .navbar .navbar-toggler{
-    display: none;
-}
-.offcanvas-body .navbar-nav .nav-item a{
-    color: black;
-    transition: .3s;
-}
-.offcanvas-body .navbar-nav .nav-item a:hover{
-    color: white;
-    padding: 8px;
-    border-radius: 4px;
-    background-color: black;
-    transition: .5s;
+.navbar{
+    animation: nav-load 1000ms;
+    margin: 0px 100px;
+    background-color: rgb(186, 186, 186);
     
 }
+
+@keyframes nav-load{
+    0%{
+        transform: translateY(-100%);
+        
+    }
+    100%{
+        transform: translateY(0);
+        
+    }
+    
+}
+
 .hero{
     background-image: url('../public/Images/home-back.jpg');
     background-size: cover;
-    margin-top: 60px;
+    
 }
 .hero .row {
     padding-top: 14%;
@@ -39,6 +33,17 @@
 }
 #col-1{
     padding-left: 80px;
+    animation: hero-section 2000ms;
+
+}
+@keyframes hero-section {
+    0%{
+        transform: translateX(-200px);
+    }
+  
+    100%{
+        transform: translateX(0);
+    }
 }
 .hero .row .container{
     display: flex;
@@ -117,7 +122,18 @@
  }
  .hero .row .col img{
     margin-left: 20px;
+    animation: hero-img 1400ms;
  }
+ @keyframes hero-img {
+    0%{
+        transform: translateX(200px);
+    }
+  
+    100%{
+        transform: translateX(0);
+    }
+}
+ 
 
  .content{ 
     position: relative;
@@ -129,8 +145,19 @@
     width: 70%;
     margin: auto;
    margin-top: -50px;
+   animation: content-section 1500ms;
    
  }
+ @keyframes content-section {
+    0%{
+        transform: translateY(-100%);
+    }
+  
+    100%{
+        transform: translateY(0);
+    }
+}
+ 
  .content .row .col i{
     background-color: black;
     color: white;
@@ -144,13 +171,18 @@
     font-size: 13px;
     font-weight: 600;
 }
-.about .row .col .one{
-    margin-bottom: -10px;
-}
 .about .row .col img{
-    margin-left: -20px;
-   
+    animation: about-img 1000ms;
 }
+@keyframes about-img{
+    0%{
+        transform: scale(0,0);
+    }
+    100%{
+        transform: scale(1,1);
+    }
+}
+
 .skills {
     background-image: url('../public/Images/home-back.jpg');
     background-size: cover;
@@ -188,6 +220,13 @@
     .hero #icons{
         padding-left: 60px;
     }
+    .navbar{
+       
+        margin: 0px 0px;
+        
+        
+    }
+    
 }
 
 
