@@ -426,13 +426,13 @@ footer blockquote {
 }
 
 .section_title{
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: hsl(0, 0%, 0%); /*first-color*/
     margin-bottom: 1rem;
 }
 .section_subtitle{
     display: block;
-    font-size: .90rem;
+    font-size: 1rem;
     color: hsl(0, 0%, 0%);
     font-weight: 800;
     margin-bottom: 0.70rem;
@@ -457,4 +457,38 @@ footer blockquote {
     .contact .row .col-4{
         width: 100%;
     }
+}
+.projects .row .col{
+    border: 2px solid rgb(255, 255, 255);
+    transition: .5s;
+    padding: 10px;
+}
+.projects .row .col:hover{
+    border: 2px solid gray;
+    transition: .5s;
+    padding: 10px 10px;
+}
+.projects .row .col img{
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    transition: .4s;
+    margin-top: 10px;
+}
+.projects .row .col button{
+    padding: 5px;
+    border: none;
+    background-color: black;
+    color: white;
+    width: 200px;
+    transition: .4s;
+    margin-bottom: 10px;
+}
+.projects .row .col button:hover{
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    transition: .4s;
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+hr.style1{
+	border-top: 2px solid #8c8b8b;
+  
 }
